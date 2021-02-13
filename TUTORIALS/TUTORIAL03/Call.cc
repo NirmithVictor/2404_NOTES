@@ -15,7 +15,7 @@ Call::Call(string s,string de,int y,int m,int da, int h, int min,int dur){
 	t=new Time(h,min);
 }
 Call::~Call(){
-	cout<<"In Dtor";
+	//cout<<"In Dtor";
 	delete d;
 	delete t;
 }
@@ -29,10 +29,9 @@ bool Call::greaterThan(Call* c){
 }
 
 void Call::print(){
-	cout<<"Call source "<<src;
-	cout<<"destination "<<dest;
-	cout<<"Duration "<<duration;
+	cout<<"Call source "<<src<<" ";
+	cout<<"destination "<<dest<<" ";
+	cout<<"Duration "<<duration<<" ";
 	d->print();
 	t->print();
 }
-

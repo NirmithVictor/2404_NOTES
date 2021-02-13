@@ -17,4 +17,4 @@ Control.o: Call.h Time.h Date.h Control.h
 	g++ -c Control.cc
 
 clean:
-	rm -f *.o p3
+	rm -f *.o t03

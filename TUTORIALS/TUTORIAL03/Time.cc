@@ -30,6 +30,6 @@ int Time::convertToMins()
 void Time::print() 
 {
   cout<<setfill('0')<<setw(2)<<hours<<":"
-      <<setfill('0')<<setw(2)<<minutes;
+      <<setfill('0')<<setw(2)<<minutes<<" \n";
 }
 

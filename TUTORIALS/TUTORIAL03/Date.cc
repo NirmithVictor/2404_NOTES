@@ -20,7 +20,7 @@ bool Date::greaterThan(Date* d){
 	
 	 //year
     cout<<"IT REACHED HERE\n";
-    if(year>d->year){
+    if(year<d->year){
         cout<<"Year";
         return false;
     }
@@ -32,7 +32,7 @@ bool Date::greaterThan(Date* d){
             return true;
         }
         else if(month==d->year){
-            if(day>d->day){
+            if(day<d->day){
                 cout<<"DATE";
                 return true;
             }
@@ -69,7 +69,7 @@ void Date::setDate(int d,int m,int y)
 void Date::print() 
 {
   cout<<setfill('0')<<setw(2)<<year<<"-"<<setfill('0')<<setw(2)<<month<<"-"<<setfill('0')
-  <<setw(2)<<day<<endl;
+  <<setw(2)<<day<<" ";
   //month = 8;
 }
 
@@ -122,4 +122,3 @@ string Date::getMonthStr() const
   else
     return "Unknown";
 }
-
